@@ -18,7 +18,10 @@
     };
 };
 
-&ocp {
+&ocp {  //fragment@0
+    /*
+    * Free up the pins used by the cape from the pinmux helpers.
+    */
     P9_19_pinmux { status = "disabled";  };
     P9_20_pinmux { status = "disabled";  };
     P9_25_pinmux { status = "disabled";  }; /* mcasp0_ahclkx */
@@ -33,11 +36,11 @@
     P9_17_pinmux { status = "disabled";  }; /* spi0_cs0 */
 }
 
-&bone_i2c_2 {
+&bone_i2c_2 {   //fragment@10
     status = "okay";
     clock-frequency = <400000>;
 }
 
-&mcasp1 {
+&mcasp1 {   //fragment@4
         status = "okay";      
 };
