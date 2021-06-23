@@ -34,12 +34,12 @@
     P9_21_pinmux { status = "disabled";  }; /* spi0_d0 */
     P9_18_pinmux { status = "disabled";  }; /* spi0_d1 */
     P9_17_pinmux { status = "disabled";  }; /* spi0_cs0 */
-}
+};
 
 &bone_i2c_2 {   //fragment@10
     status = "okay";
     clock-frequency = <400000>;
-}
+};
 
 &mcasp1 {   //fragment@4
         status = "okay";      
