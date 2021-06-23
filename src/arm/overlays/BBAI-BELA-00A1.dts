@@ -24,11 +24,6 @@
     */
     P9_19_pinmux { status = "disabled";  };
     P9_20_pinmux { status = "disabled";  };
-    P9_25_pinmux { status = "disabled";  }; /* mcasp0_ahclkx */
-    P9_28_pinmux { status = "disabled";  }; /* mcasp0_axr2 */
-    P9_29_pinmux { status = "disabled";  }; /* mcasp0_fsx */
-    P9_31_pinmux { status = "disabled";  }; /* mcasp0_ahclk */
-    P9_30_pinmux { status = "disabled";  }; /* mcasp0_axr0 */
 
     P9_22_pinmux { status = "disabled";  }; /* spi0_sclk */
     P9_21_pinmux { status = "disabled";  }; /* spi0_d0 */
