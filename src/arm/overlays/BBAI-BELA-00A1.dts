@@ -1,0 +1,43 @@
+/*
+ * Copyright (C) 2021 Dhruva Gole <goledhruva@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License version 2 as
+ * published by the Free Software Foundation.
+ */
+
+/dts-v1/;
+/plugin/;
+
+/*
+ * Helper to show loaded overlays under: /proc/device-tree/chosen/overlays/
+ */
+&{/chosen} {
+    overlays {
+        BELA_OVERLAY = __TIMESTAMP__;
+    };
+};
+
+&ocp {
+    P9_19_pinmux { status = "disabled";  };
+    P9_20_pinmux { status = "disabled";  };
+    P9_25_pinmux { status = "disabled";  }; /* mcasp0_ahclkx */
+    P9_28_pinmux { status = "disabled";  }; /* mcasp0_axr2 */
+    P9_29_pinmux { status = "disabled";  }; /* mcasp0_fsx */
+    P9_31_pinmux { status = "disabled";  }; /* mcasp0_ahclk */
+    P9_30_pinmux { status = "disabled";  }; /* mcasp0_axr0 */
+
+    P9_22_pinmux { status = "disabled";  }; /* spi0_sclk */
+    P9_21_pinmux { status = "disabled";  }; /* spi0_d0 */
+    P9_18_pinmux { status = "disabled";  }; /* spi0_d1 */
+    P9_17_pinmux { status = "disabled";  }; /* spi0_cs0 */
+}
+
+&bone_i2c_2 {
+    status = "okay";
+    clock-frequency = <400000>;
+}
+
+&mcasp1 {
+        status = "okay";      
+};
