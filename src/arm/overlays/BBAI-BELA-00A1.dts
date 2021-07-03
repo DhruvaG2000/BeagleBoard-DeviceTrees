@@ -20,7 +20,7 @@
 
 &ocp {  //fragment@0
     /*
-    * Free up the pins used by the cape from the pinmux helpers.
+     * Free up the pins used by the cape from the pinmux helpers.
      */
     P9_19_pinmux { status = "disabled";  };
     P9_20_pinmux { status = "disabled";  };
@@ -37,6 +37,25 @@
     P9_18_pinmux { pinctrl-0 = <&P9_18_spi_pin>; }; /* spi2_d0.spi2_d0, mcasp1_axr0.off */
     P9_21_pinmux { pinctrl-0 = <&P9_21_spi_pin>;  }; /* spi2_d1.spi2_d1, vin1a_vsync0.off */
     P9_22_pinmux { pinctrl-0 = <&P9_22_spi_sclk_pin>;  };   /* spi2_sclk.spi2_sclk, xref_clk2.off */
+
+    /* 	pinmux_bela_pru_pins */
+    //P8_41_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_4 */
+    //P8_42_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_5 */
+    //P8_44_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_3 */
+    //P8_45_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_0 */
+    //P8_46_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_1 */
+    //P8_43_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_2 */
+
+    /* Pinmux for i2c on Bela header */
+    //P9_26	
+    //P9_26
+
+    // Pinmux for i2c2 for Bela codec
+    //P9_20
+    //P9_19
+
+    /* pinmux for BB digitals */
+    // refer https://github.com/BelaPlatform/bb.org-overlays/blob/master/src/arm/BB-BELA-00A1.dts#L143
 };
 
 &bone_i2c_2 {   //fragment@10
