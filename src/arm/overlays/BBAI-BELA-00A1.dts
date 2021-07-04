@@ -19,12 +19,6 @@
 };
 
 &ocp {  //fragment@0
-    /*
-     * Free up the pins used by the cape from the pinmux helpers.
-     */
-    P9_19_pinmux { status = "disabled";  };
-    P9_20_pinmux { status = "disabled";  };
-
     /* Pinmux for McASP1 (audio i/o) */
     P9_25_pinmux { pinctrl-0 = <&P9_25_mcasp_pin>;  };  /* xref_clk0.mcasp1_ahclkx */
     P9_28_pinmux { pinctrl-0 = <&P9_28_mcasp_pin>;  };  /* mcasp1_axr11.mcasp1_axr11 */
@@ -79,6 +73,15 @@
     clock-frequency = <400000>;
 };
 
+&bone_i2c_3{   //fragment@10
+    status = "okay";
+    clock-frequency = <400000>;
+};
+
+&bone_spi_0{
+    status = "okay";
+};
+
 &mcasp1 {   //fragment@4
-        status = "okay";      
+        status = "okay";
 };
