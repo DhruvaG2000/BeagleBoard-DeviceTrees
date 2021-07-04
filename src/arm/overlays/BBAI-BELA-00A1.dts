@@ -39,23 +39,39 @@
     P9_22_pinmux { pinctrl-0 = <&P9_22_spi_sclk_pin>;  };   /* spi2_sclk.spi2_sclk, xref_clk2.off */
 
     /* 	pinmux_bela_pru_pins */
-    //P8_41_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_4 */
-    //P8_42_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_5 */
-    //P8_44_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_3 */
-    //P8_45_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_0 */
-    //P8_46_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_1 */
-    //P8_43_pinmux { pinctrl-0 = <&>; };	/* pr1_pru1_pru_r30_2 */
+    P8_41_pinmux { pinctrl-0 = <&P8_41_pruin_pin>; };	/* vout1_d4.pr2_pru0_gpi1 */
+    P8_42_pinmux { pinctrl-0 = <&P8_42_pruin_pin>; };	/* vout1_d5.pr2_pru0_gpi2 */
+    P8_44_pinmux { pinctrl-0 = <&P8_44_pruin_pin>; };	/* vout1_d3.pr2_pru0_gpi0 */
+    P8_45_pinmux { pinctrl-0 = <&P8_45_pruin_pin>; };	/* vout1_d0.pr2_pru1_gpi18 */
+    P8_46_pinmux { pinctrl-0 = <&P8_46_pruin_pin>; };	/* vout1_d1.pr2_pru1_gpi19 */
+    P8_43_pinmux { pinctrl-0 = <&P8_43_pruin_pin>; };	/* vout1_d2.pr2_pru1_gpi20 */
 
     /* Pinmux for i2c on Bela header */
-    //P9_26	
-    //P9_26
+    P9_26_pinmux { pinctrl-0 = <&P9_26_i2c_pin>; }; /* gpio6_14.i2c3_sda */
+    P9_24_pinmux { pinctrl-0 = <&P9_24_i2c_pin>; };  /* gpio6_15.i2c3_scl */
 
     // Pinmux for i2c2 for Bela codec
-    //P9_20
-    //P9_19
+    P9_20_pinmux { pinctrl-0 = <&P9_20_i2c_pin>; };  /* Conflict: gpmc_a1.i2c4_sda needed to be scl */
+    P9_19_pinmux { pinctrl-0 = <&P9_19_i2c_pin>; };  /* Conflict: gpmc_a0.i2c4_scl needed to be sda */
 
     /* pinmux for BB digitals */
     // refer https://github.com/BelaPlatform/bb.org-overlays/blob/master/src/arm/BB-BELA-00A1.dts#L143
+    P8_07_pinmux { pinctrl-0 = <&P8_07_gpio_pin>; };  /* mcasp1_axr14.gpio6_5 */
+    P8_08_pinmux { pinctrl-0 = <&P8_07_gpio_pin>; };  /*  */
+    P8_09_pinmux { pinctrl-0 = <&P8_09_gpio_pin>; };  /*  */
+    P8_10_pinmux { pinctrl-0 = <&P8_10_gpio_pin>; };  /*  */
+    P8_11_pinmux { pinctrl-0 = <&P8_11_gpio_pin>; };  /*  */
+    P8_12_pinmux { pinctrl-0 = <&P8_12_gpio_pin>; };  /*  */
+    P8_13_pinmux { pinctrl-0 = <&P8_13_gpio_pin>; };  /*  */
+    P8_14_pinmux { pinctrl-0 = <&P8_14_gpio_pin>; };  /*  */
+    P8_15_pinmux { pinctrl-0 = <&P8_15_gpio_pin>; };  /*  */
+    P8_16_pinmux { pinctrl-0 = <&P8_16_gpio_pin>; };  /*  */
+    P9_16_pinmux { pinctrl-0 = <&P9_16_gpio_pin>; };  /*  */
+    P8_18_pinmux { pinctrl-0 = <&P8_18_gpio_pin>; };  /*  */
+    P8_27_pinmux { pinctrl-0 = <&P8_27_gpio_pin>; };  /*  */
+    P8_28_pinmux { pinctrl-0 = <&P8_28_gpio_pin>; };  /*  */
+    P8_29_pinmux { pinctrl-0 = <&P8_29_gpio_pin>; };  /*  */
+    P8_30_pinmux { pinctrl-0 = <&P8_30_gpio_pin>; };  /*  */
 };
 
 &bone_i2c_2 {   //fragment@10
