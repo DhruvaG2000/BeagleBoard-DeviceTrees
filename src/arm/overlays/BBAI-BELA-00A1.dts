@@ -51,7 +51,7 @@
     /* pinmux for BB digitals */
     // refer https://github.com/BelaPlatform/bb.org-overlays/blob/master/src/arm/BB-BELA-00A1.dts#L143
     P8_07_pinmux { pinctrl-0 = <&P8_07_gpio_pin>; };  /* mcasp1_axr14.gpio6_5 */
-    P8_08_pinmux { pinctrl-0 = <&P8_07_gpio_pin>; };  /*  */
+    P8_08_pinmux { pinctrl-0 = <&P8_08_gpio_pin>; };  /*  */
     P8_09_pinmux { pinctrl-0 = <&P8_09_gpio_pin>; };  /*  */
     P8_10_pinmux { pinctrl-0 = <&P8_10_gpio_pin>; };  /*  */
     P8_11_pinmux { pinctrl-0 = <&P8_11_gpio_pin>; };  /*  */
