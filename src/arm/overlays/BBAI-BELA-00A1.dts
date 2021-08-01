@@ -45,8 +45,8 @@
     P9_24_pinmux { pinctrl-0 = <&P9_24_i2c_pin>; };  /* gpio6_15.i2c3_scl */
 
     // Pinmux for i2c2 for Bela codec
-    P9_20_pinmux { pinctrl-0 = <&P9_20_i2c_pin>; };  /* Conflict: gpmc_a1.i2c4_sda needed to be scl */
-    P9_19_pinmux { pinctrl-0 = <&P9_19_i2c_pin>; };  /* Conflict: gpmc_a0.i2c4_scl needed to be sda */
+    P9_20_pinmux { pinctrl-0 = <&P9_20_i2c_pin>; };  /* gpmc_a1.i2c4_sda  */
+    P9_19_pinmux { pinctrl-0 = <&P9_19_i2c_pin>; };  /* gpmc_a0.i2c4_scl */
 
     /* pinmux for BB digitals */
     // refer https://github.com/BelaPlatform/bb.org-overlays/blob/master/src/arm/BB-BELA-00A1.dts#L143
@@ -56,8 +56,8 @@
     P8_10_pinmux { pinctrl-0 = <&P8_10_gpio_pin>; };  /*  */
     P8_11_pinmux { pinctrl-0 = <&P8_11_gpio_pin>; };  /*  */
     P8_12_pinmux { pinctrl-0 = <&P8_12_gpio_pin>; };  /*  */
-    P8_13_pinmux { pinctrl-0 = <&P8_13_gpio_pin>; };  /*  */
-    P8_14_pinmux { pinctrl-0 = <&P8_14_gpio_pin>; };  /*  */
+    P9_12_pinmux { pinctrl-0 = <&P9_12_gpio_pin>; };  /* mcasp1_aclkr.gpio5_0 */
+    P9_14_pinmux { pinctrl-0 = <&P9_14_gpio_pin>; };  /* mcasp1_aclkr.gpio5_0 */
     P8_15_pinmux { pinctrl-0 = <&P8_15_gpio_pin>; };  /*  */
     P8_16_pinmux { pinctrl-0 = <&P8_16_gpio_pin>; };  /*  */
     P9_16_pinmux { pinctrl-0 = <&P9_16_gpio_pin>; };  /*  */
