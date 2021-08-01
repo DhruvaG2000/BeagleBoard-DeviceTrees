@@ -63,6 +63,7 @@
     P9_16_pinmux { pinctrl-0 = <&P9_16_gpio_pin>; };  /*  */
     P8_18_pinmux { pinctrl-0 = <&P8_18_gpio_pin>; };  /*  */
     P8_27_pinmux { pinctrl-0 = <&P8_27_gpio_pin>; };  /*  */
+    P9_27_pinmux { pinctrl-0 = <&P9_27_gpio_pin>; };  /*  */
     P8_28_pinmux { pinctrl-0 = <&P8_28_gpio_pin>; };  /*  */
     P8_29_pinmux { pinctrl-0 = <&P8_29_gpio_pin>; };  /*  */
     P8_30_pinmux { pinctrl-0 = <&P8_30_gpio_pin>; };  /*  */
