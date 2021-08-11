@@ -68,7 +68,7 @@
     P8_30_pinmux { pinctrl-0 = <&P8_30_gpio_pin>; };  /*  */
 
 	/* Pinmux for Bela Button */
-    P9_27_pinmux { pinctrl-0 = <&P9_27_gpio_pin>; };  /* vin2a_d14.gpio4_15, mcasp1_fsr.off */
+    P9_27_pinmux { pinctrl-0 = <&P9_27_gpio_pu_pin>; };  /* vin2a_d14.gpio4_15, mcasp1_fsr.off */
 };
 
 &bone_i2c_2 {   //fragment@10
